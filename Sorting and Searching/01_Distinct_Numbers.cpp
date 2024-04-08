@@ -1,0 +1,60 @@
+
+
+by sorting
+#include<bits/stdc++.h>
+#define input(x) for(auto &a:x)cin>>a
+#define print(x) for(auto &a:x){cout<<a<<' ';}cout<<"\n";
+#define println(x) for(auto &a:x){cout<<a<<'\n';}
+#define fr first
+#define sc second 
+#define ll long long
+#define all(v) v.begin(), v.end()
+#define ld long double
+#define pb push_back
+using namespace std;
+ll mod=1000000007;
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int n;
+    cin>>n;
+    vector<int> arr(n,0);
+    input(arr);
+    sort(all(arr));
+    int count=1;
+    for(int i=1;i<n;i++){
+        if(arr[i]!=arr[i-1]) count++;
+    }
+    cout<<count<<endl;
+   return 0;
+}
+
+#include<bits/stdc++.h>
+#define input(x) for(auto &a:x)cin>>a
+#define print(x) for(auto &a:x){cout<<a<<' ';}cout<<"\n";
+#define println(x) for(auto &a:x){cout<<a<<'\n';}
+#define fr first
+#define sc second 
+#define ll long long
+#define all(v) v.begin(), v.end()
+#define ld long double
+#define pb push_back
+using namespace std;
+ll mod=1000000007;
+ 
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int n;
+    cin>>n;
+    set<int> st; 
+    for(int i=0;i<n;i++){
+        int a;
+        cin>>a;
+       st.insert(a);
+    }
+    cout<<st.size()<<endl;
+   return 0;
+}
+
